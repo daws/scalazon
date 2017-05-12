@@ -36,6 +36,11 @@ object CredentialsProvider {
   lazy val InstanceProfile = new InstanceProfileCredentialsProvider()
 
   /**
+   * Provides an instance of the `Container` provider
+   */
+  lazy val Container = new ContainerCredentialsProvider()
+
+  /**
    * Provides an instance of the default `ClasspathPropertiesFileCredentialsProvider` provider.
    */
   lazy val DefaultClasspathPropertiesFile = new ClasspathPropertiesFileCredentialsProvider()
