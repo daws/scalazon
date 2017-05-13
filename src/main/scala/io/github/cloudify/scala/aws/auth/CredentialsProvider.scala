@@ -33,7 +33,7 @@ object CredentialsProvider {
   /**
    * Provides an instance of the `InstanceProfile` provider
    */
-  lazy val InstanceProfile = new InstanceProfileCredentialsProvider()
+  lazy val InstanceProfile = new InstanceProfileCredentialsProvider(false)
 
   /**
    * Provides an instance of the `Container` provider
